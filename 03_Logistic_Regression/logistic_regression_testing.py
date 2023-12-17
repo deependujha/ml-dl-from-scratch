@@ -9,7 +9,6 @@ from logistic_regression_algorithm import LogisticRegression
 
 # Testing
 if __name__ == "__main__":
-    # Imports
 
     bc = datasets.load_breast_cancer()
     X, y = bc.data, bc.target
