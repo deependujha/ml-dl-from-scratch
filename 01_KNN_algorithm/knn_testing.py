@@ -1,9 +1,8 @@
 """_summary_
         Testing the knn model
 """
-import numpy as np
-from sklearn import datasets
-from sklearn.model_selection import train_test_split
+from sklearn import datasets  # type: ignore
+from sklearn.model_selection import train_test_split  # type: ignore
 from knn_algorithm import KNN
 
 # main function
