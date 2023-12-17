@@ -100,20 +100,6 @@ class LogisticRegression:
             raise ValueError("Model not fitted")
         return self.bias
 
-    def mean_squared_error(self, x_test: np.ndarray, y_test: np.ndarray) -> float:
-        """_summary_
-            Return the mean squared error
-
-
-        Args:
-            x_test (np.ndarray): test data
-            y_test (np.ndarray): test labels
-
-        Returns:
-            float: mean squared error of the model
-        """
-        return np.mean((y_test - self.predict(x_test)) ** 2)
-
     def accuracy(self, x_test: np.ndarray, y_test: np.ndarray) -> float:
         """_summary_
             Return the accuracy of the model
