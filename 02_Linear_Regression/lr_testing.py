@@ -30,6 +30,14 @@ if __name__ == "__main__":
     accu = regressor.r2_score(X_test, y_test)
     print("R2:", accu)
 
+    coef_ = regressor.coef_()
+    print("Coef:", coef_)
+
+    bias = regressor.intercept_()
+    print("Bias:", bias)
+
+    print("Original Coef:", original_coef)
+
     # Plot
     y_pred_line = regressor.predict(X)
     cmap = plt.get_cmap("viridis")
