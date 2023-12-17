@@ -56,13 +56,13 @@ $$ P(x|y_n) = P(x_1|y_n)*P(x_2|y_n)*...*P(x_n|y_n) $$
 
 - Now, once we have $P(Y_n)$ and $P(X|Y_n)$, we can calculate the probability of belonging to class `y_n` by simply multiplying them.
 
-$$ P(y_n|x) = P(x_1|y_n)*P(x_2|y_n)*...*P(x_m|y_n)*P(y_n) $$
+$$ P(y_n|x) = P(x_1|y_n) * P(x_2|y_n) * ... * P(x_m|y_n) * P(y_n) $$
 
 - But, the product of many small numbers might cause underflow and we might not be able to calculate the probability.
 
 - So, we take the logarithm of both sides, and multiplication becomes addition:
 
-$$ log(P(y_n|x)) \propto log(P(x_1|y_n)*P(x_2|y_n)*...*P(x_m|y_n)*P(y_n)) $$
+$$ log(P(y_n|x)) \propto log(P(x_1|y_n) * P(x_2|y_n) * ... * P(x_m|y_n) * P(y_n)) $$
 
 $$ log(P(y_n|x)) \propto log(P(x_1|y_n)) + log(P(x_2|y_n)) + ... + log(P(x_m|y_n)) + log(P(y_n)) $$
 
